@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">beerApplication</string>
+    <string name="FILTER">FILTER</string>
+    <string-array name="SORT">
+        <item>A->Z</item>
+        <item>Z->A</item>
+        <item>Lowest alcohol degree</item>
+        <item>Highest alcohol degree</item>
+    </string-array>
+</resources>
