@@ -24,7 +24,7 @@ import static java.lang.Thread.sleep;
 public class SplashScreen extends Activity {
 
     LoadAllData loadAllData = new LoadAllData();
-    static String url_all_data = "http://51.38.236.200/api_beer/open-beer-database.json";
+    static String url_all_data = "https://application.rootcomputerlab.com/api_beer/open-beer-database.json";
     // Creating JSON Parser object
     JSONParser jParser = new JSONParser();
 
@@ -92,7 +92,8 @@ public class SplashScreen extends Activity {
     private class LoadAllData extends AsyncTask<String, String, String> {
 
         String  name, descbeer, style, brewery, address, city, country, phone, website;
-        int lengthdata, id, alcohol_degree, code;
+        int lengthdata, id, code;
+        float alcohol_degree;
 
         JSONArray jsonbeer = null;
 
@@ -126,7 +127,7 @@ public class SplashScreen extends Activity {
                         //data
                         id = c.getInt(KEY_ID);
                         name = c.getString(KEY_NAME);
-                        alcohol_degree = c.getInt(KEY_ALCOHOL_DEGREE);
+                        alcohol_degree = Float.parseFloat(c.getString(KEY_ALCOHOL_DEGREE));
                         descbeer = c.getString(KEY_DESCBEER);
                         style = c.getString(KEY_STYLE);
 

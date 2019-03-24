@@ -16,7 +16,7 @@ public class beer {
     private String phone;
     private String website;
 
-    public beer(int id, String name, int alcohol_degree, String descbeer, String style, String brewery, String address, String city, int code, String country, String phone, String website){
+    public beer(int id, String name, float alcohol_degree, String descbeer, String style, String brewery, String address, String city, int code, String country, String phone, String website){
         this.id = id;
         this.name = name;
         this.alcohol_degree = alcohol_degree;
