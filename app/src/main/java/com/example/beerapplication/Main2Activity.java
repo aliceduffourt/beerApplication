@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
-    TextView beeralcohol_degree, beerdescbeer, beerstyle, beerbrewery, beeraddress, beercity, beercode, beercountry, beerphone, beerwebsite;
+    TextView beeralcohol_degree, beerdescbeer, beerstyle, beerbrewery, beeraddress, beercity, beerphone, beerwebsite;
     String id;
     String name;
     float alcohol_degree;
@@ -35,8 +35,6 @@ public class Main2Activity extends AppCompatActivity {
         beerbrewery = findViewById(R.id.beerbrewery);
         beeraddress = findViewById(R.id.beeraddress);
         beercity = findViewById(R.id.beercity);
-        beercode = findViewById(R.id.beercode);
-        beercountry = findViewById(R.id.beercountry);
         beerphone = findViewById(R.id.beerphone);
         beerwebsite = findViewById(R.id.beerwebsite);
 
@@ -45,7 +43,7 @@ public class Main2Activity extends AppCompatActivity {
         bm.open();
 
         Cursor c = bm.getinfobeer(Integer.parseInt(id));
-        //Compte nbre donnÃ©e enregistrÃ©
+
         if (c.moveToFirst())
         {
 
@@ -64,15 +62,13 @@ public class Main2Activity extends AppCompatActivity {
         c.close(); // fermeture du curseur
 
         getSupportActionBar().setTitle(name);
-        beeralcohol_degree.setText(String.valueOf(alcohol_degree));
-        beerdescbeer.setText(descbeer);
-        beerstyle.setText(style);
-        beerbrewery.setText(brewery);
-        beeraddress.setText(address);
-        beercity.setText(city);
-        beercode.setText(String.valueOf(code));
-        beercountry.setText(country);
-        beerphone.setText(phone);
-        beerwebsite.setText(website);
+        beeralcohol_degree.setText("Alcohol degree : "+String.valueOf(alcohol_degree));
+        beerdescbeer.setText("Description beer :\n"+descbeer);
+        beerstyle.setText("Style : "+style);
+        beerbrewery.setText("Brewery : "+brewery);
+        beeraddress.setText("Adress :\n"+address);
+        beercity.setText(code+" "+city+", "+country+ "\n");
+        beerphone.setText("Phone : "+phone);
+        beerwebsite.setText("Website : "+website);
     }
 }

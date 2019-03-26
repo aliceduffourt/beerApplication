@@ -9,19 +9,19 @@ import android.database.sqlite.SQLiteDatabase;
 public class beerManager {
 
     // définition des variables globales utilisé dans le manager
-    private static final String TABLE_NAME = "Beer";
-    private static final String KEY_ID = "id";
-    private static final String KEY_NAME = "name";
-    private static final String KEY_ALCOHOL_DEGREE = "alcohol_degree";
-    private static final String KEY_DESCBEER = "beer_description";
-    private static final String KEY_STYLE = "style";
-    private static final String KEY_BREWERY = "brewery";
-    private static final String KEY_ADDRESS = "address";
-    private static final String KEY_CITY = "city";
-    private static final String KEY_CODE = "postal_code";
-    private static final String KEY_COUNTRY = "country";
-    private static final String KEY_PHONE = "phone";
-    private static final String KEY_WEBSITE = "website";
+    public static final String TABLE_NAME = "Beer";
+    public static final String KEY_ID = "id";
+    public static final String KEY_NAME = "name";
+    public static final String KEY_ALCOHOL_DEGREE = "alcohol_degree";
+    public static final String KEY_DESCBEER = "beer_description";
+    public static final String KEY_STYLE = "style";
+    public static final String KEY_BREWERY = "brewery";
+    public static final String KEY_ADDRESS = "address";
+    public static final String KEY_CITY = "city";
+    public static final String KEY_CODE = "postal_code";
+    public static final String KEY_COUNTRY = "country";
+    public static final String KEY_PHONE = "phone";
+    public static final String KEY_WEBSITE = "website";
 
 
 

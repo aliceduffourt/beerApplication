@@ -89,7 +89,7 @@ public class SplashScreen extends Activity {
         else return false;
     }
 
-    private class LoadAllData extends AsyncTask<String, String, String> {
+   private class LoadAllData extends AsyncTask<String, String, String> {
 
         String  name, descbeer, style, brewery, address, city, country, phone, website;
         int lengthdata, id, code;
