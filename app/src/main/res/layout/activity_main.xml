@@ -40,12 +40,14 @@
                 android:clickable="true"
                 android:focusable="true">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/research"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
                     android:textSize="22sp"
-                    android:text="@string/FILTER" />
+                    android:hint="@string/RESEARCH"
+                    android:singleLine="true"/>
 
             </LinearLayout>
 

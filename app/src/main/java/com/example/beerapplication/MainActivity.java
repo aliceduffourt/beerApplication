@@ -1,15 +1,16 @@
 package com.example.beerapplication;
 
 import android.database.Cursor;
-import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(MainActivity.this);
     private List<beer> beerList = new ArrayList<>();
+    private EditText recherche;
+    private String word = "";
+    private List<beer> beerListsearch = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +34,30 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.rv_beer);
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
+        recherche = findViewById(R.id.research);
         recyclerView.setHasFixedSize(true);
 
         // use a linear layout manager
         recyclerView.setLayoutManager(layoutManager);
+
+        recherche.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+                word = String.valueOf(charSequence);
+                search();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
         getlistsort(0);
 
@@ -43,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         adaptersort.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnersort.setAdapter(adaptersort);
         spinnersort.setOnItemSelectedListener(MainActivity.this);
+
 
 
     }
@@ -61,18 +85,26 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if (sortchoice == 0){
             c = bm.getAllbeer();
+            Toast.makeText(MainActivity.this, "A->Z", Toast.LENGTH_LONG).show();
+
         }
 
         if (sortchoice == 1){
             c = bm.getAllbeer2();
+            Toast.makeText(MainActivity.this, "Z->A", Toast.LENGTH_SHORT).show();
+
         }
 
         if (sortchoice == 2){
             c = bm.getAllbeer3();
+            Toast.makeText(MainActivity.this, "Lowest alcohol degree", Toast.LENGTH_SHORT).show();
+
         }
 
         if (sortchoice == 3){
             c = bm.getAllbeer4();
+            Toast.makeText(MainActivity.this, "Highest alcohol degree", Toast.LENGTH_SHORT).show();
+
         }
 
         if (c.moveToFirst())
@@ -95,7 +127,27 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             while (c.moveToNext());
         }
         c.close(); // fermeture du curseur
-        mAdapter = new MyAdapter(beerList, MainActivity.this);
+        search();
+    }
+
+    public void search() {
+
+        beerListsearch.clear();
+
+        for (int i=0; i<beerList.size(); i++){
+            if(word == ""){
+                beerListsearch.add(beerList.get(i));
+            }
+            else if(beerList.get(i).getName().toLowerCase().contains(word.toLowerCase())){
+                beerListsearch.add(beerList.get(i));
+            }
+        }
+
+        if (beerListsearch.size()==0){
+            Toast.makeText(MainActivity.this, "No beer matches your search", Toast.LENGTH_SHORT).show();
+        }
+
+        mAdapter = new MyAdapter(beerListsearch, MainActivity.this);
         recyclerView.setAdapter(mAdapter);
 
     }

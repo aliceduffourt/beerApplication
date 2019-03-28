@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">beerApplication</string>
-    <string name="FILTER">FILTER</string>
+    <string name="RESEARCH">research</string>
     <string-array name="SORT">
         <item>A->Z</item>
         <item>Z->A</item>
