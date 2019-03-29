@@ -59,7 +59,7 @@ public class Main2Activity extends AppCompatActivity {
                     phone = c.getString(c.getColumnIndex(beerManager.KEY_PHONE));
                     website = c.getString(c.getColumnIndex(beerManager.KEY_WEBSITE));
         }
-        c.close(); // fermeture du curseur
+        c.close();
 
         getSupportActionBar().setTitle(name);
         beeralcohol_degree.setText("Alcohol degree : "+String.valueOf(alcohol_degree));
