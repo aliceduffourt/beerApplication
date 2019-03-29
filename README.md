@@ -47,13 +47,13 @@ Cette application affiche plus de 2 000 bières du monde entier issuent d'une AP
 ### Ecran du détail de la bière
 
 * Ecran affichant les différentes informations sur la bière : 
- * taux d'alcool par volume
- * description
- * style
- * nom de la brasserie
- * adresse
- * téléphone
- * site web
+  * taux d'alcool par volume
+  * description
+  * style
+  * nom de la brasserie
+  * adresse
+  * téléphone
+  * site web
 * il est aussi possible de visité le site de la brasserie en cliquant sur le lien du site web
 
 <img src="https://github.com/aliceduffourt/beerApplication/blob/master/Image%20app/item.jpg" width="281.25" height="500">   <img src="https://github.com/aliceduffourt/beerApplication/blob/master/Image%20app/website.jpg" width="281.25" height="500">
