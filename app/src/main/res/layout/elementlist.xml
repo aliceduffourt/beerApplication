@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="10">
+        android:weightSum="11">
 
     <TextView
         android:id="@+id/elementname"
@@ -33,7 +33,7 @@
         android:id="@+id/elementalcohol_degree"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:textColor="@color/black"
         android:layout_marginTop="30sp"
         android:layout_marginBottom="30sp"

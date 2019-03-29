@@ -5,15 +5,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/grey">
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_height="wrap_content"
-            android:indeterminateOnly="true"
-            android:layout_width="wrap_content"
-            style="?android:attr/progressBarStyleLarge"
-            android:indeterminateTint="@color/black"
-            android:layout_margin="25dp"/>
+    <ImageView
+    android:layout_width="300sp"
+    android:layout_height="300sp"
+    android:src="@drawable/logo" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:indeterminateOnly="true"
+        style="?android:attr/progressBarStyleLarge"
+        android:indeterminateTint="@color/black"
+        android:layout_margin="25dp"/>
+
+
+
 
     </LinearLayout>
