@@ -13,7 +13,7 @@ Cette application affiche plus de 2 000 bières du monde entier issuent d'une AP
 
 * Installation d'Android Studio
 * Récupérer la branche develop
-* https://github.com/LudoCarlu/Pokemon.git
+* https://github.com/aliceduffourt/beerApplication
 
 ## Consignes respectées :
 
@@ -23,7 +23,7 @@ Cette application affiche plus de 2 000 bières du monde entier issuent d'une AP
 * Stockage des données en cache.
 * Architecture 
 * Fonctions supplémentaires :
-  * Barre de recherched
+  * Barre de recherche
   * Tri des bières de A à Z, de Z à A et du taux d'alcool par volume 
   * Redirection vers le site de la brasserie de la bière sélictionnée
   
