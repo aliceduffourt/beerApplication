@@ -23,3 +23,14 @@ Cette application affiche plus de 2 000 bières du monde entier issuent d'une AP
 * Splash affichant le logo de l'application ainsi qu'un rond de chargement pendant que les données de l'API se mettent a jour dans l'application
 
 <img src="https://github.com/aliceduffourt/beerApplication/blob/master/Image%20app/splashscreen.jpg" width="281.25" height="500">
+
+### Ecran d'accueil
+* Ecran affichant la liste des bières avec leur taux d'alcool par volume 
+* affiche aussi un spinner tri et un espace de recherche 
+
+<img src="https://github.com/aliceduffourt/beerApplication/blob/master/Image%20app/1st%20screen.jpg" width="281.25" height="500">   <img src="https://github.com/aliceduffourt/beerApplication/blob/master/Image%20app/sort.jpg" width="281.25" height="500">
+
+<img src="https://github.com/aliceduffourt/beerApplication/blob/master/Image%20app/research.jpg" width="281.25" height="500"> <img src="https://github.com/aliceduffourt/beerApplication/blob/master/Image%20app/researchbis.jpg" width="281.25" height="500">
+
+### Ecran du détail de la bière
+* Ecran affichant les différentes informations sur la bière
