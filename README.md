@@ -21,3 +21,4 @@ Cette application affiche plus de 2 000 bières du monde entier issuent d'une AP
 ## Fonctionalités : 
 ### Premier écran
 Splash affichant le logo de l'application ainsi qu'un rond de chargement pendant que les données de l'API se mettent a jour dans l'application
+![Splashscreen](/beerApplication/Image app/splashscreen.jpg)
