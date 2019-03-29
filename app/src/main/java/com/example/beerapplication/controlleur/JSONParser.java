@@ -1,4 +1,4 @@
-package com.example.beerapplication;
+package com.example.beerapplication.controlleur;
 
 import java.io.BufferedReader;
 import java.io.IOException;

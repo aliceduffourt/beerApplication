@@ -1,4 +1,4 @@
-package com.example.beerapplication;
+package com.example.beerapplication.view;
 
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +13,10 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.example.beerapplication.R;
+import com.example.beerapplication.Modele.beer;
+import com.example.beerapplication.controlleur.beerManager;
 
 import java.util.ArrayList;
 import java.util.List;

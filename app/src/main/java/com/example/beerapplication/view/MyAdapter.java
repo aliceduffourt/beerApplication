@@ -1,4 +1,4 @@
-package com.example.beerapplication;
+package com.example.beerapplication.view;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.example.beerapplication.R;
+import com.example.beerapplication.Modele.beer;
 
 import java.util.List;
 

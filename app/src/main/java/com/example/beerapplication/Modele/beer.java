@@ -1,4 +1,4 @@
-package com.example.beerapplication;
+package com.example.beerapplication.Modele;
 
 import java.util.ArrayList;
 

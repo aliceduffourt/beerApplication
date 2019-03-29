@@ -1,10 +1,12 @@
-package com.example.beerapplication;
+package com.example.beerapplication.view;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.beerapplication.R;
+import com.example.beerapplication.controlleur.beerManager;
 
 public class Main2Activity extends AppCompatActivity {
 

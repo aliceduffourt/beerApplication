@@ -1,4 +1,4 @@
-package com.example.beerapplication;
+package com.example.beerapplication.controlleur;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

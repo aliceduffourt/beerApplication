@@ -1,9 +1,11 @@
-package com.example.beerapplication;
+package com.example.beerapplication.controlleur;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.example.beerapplication.Modele.beer;
 
 // manager de la base avec la fonction de création de la table ainsi que toutes les fonctions d'appel de la table
 public class beerManager {

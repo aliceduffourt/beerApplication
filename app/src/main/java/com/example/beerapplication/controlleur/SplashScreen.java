@@ -1,4 +1,4 @@
-package com.example.beerapplication;
+package com.example.beerapplication.controlleur;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,9 @@ import android.os.Handler;
 import android.widget.Toast;
 
 
+import com.example.beerapplication.R;
+import com.example.beerapplication.Modele.beer;
+import com.example.beerapplication.view.MainActivity;
 
 import org.apache.http.NameValuePair;
 import org.json.JSONArray;
@@ -99,7 +102,7 @@ public class SplashScreen extends Activity {
 
          beer[] BDDbeer;
 
-        beerManager beerManager = new beerManager(SplashScreen.this); // gestionnaire de la table "collecte"
+        com.example.beerapplication.controlleur.beerManager beerManager = new beerManager(SplashScreen.this); // gestionnaire de la table "collecte"
 
         @Override
         protected void onPreExecute() {
