@@ -21,7 +21,7 @@ Cette application affiche plus de 2 000 bières du monde entier issuent d'une AP
 * Appel WebService à une API Rest.
 * Affichage d'une liste dans un RecyclerView
 * Stockage des données en cache.
-* Architecture 
+* Architecture MVC
 * Fonctions supplémentaires :
   * Barre de recherche
   * Tri des bières de A à Z, de Z à A et du taux d'alcool par volume 
